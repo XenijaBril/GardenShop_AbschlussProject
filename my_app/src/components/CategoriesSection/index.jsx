@@ -1,16 +1,16 @@
 import React from 'react'
+import CategoriesContainer from '../CategoriesContainer'
+import s from './index.module.css'
 
-export default function CategoriesSection({id, title, image}) {
+export default function CategoriesSection() {
   return (
     <section>
       <div>
-      <p>Categories</p>
-      <img src={image} alt={title} />
-      <p>{title}</p>
-
-
+        <p className={s.categ_text}>Categories</p>
+        <CategoriesContainer />
         
-    </div>
+       
+      </div>
     </section>
         
   )
