@@ -1,0 +1,19 @@
+.categories_container {
+    margin: 40px auto;
+    padding: 0 33px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.categrs_title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    padding: 0 33px;
+
+}
+

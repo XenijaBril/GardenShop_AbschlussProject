@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './media/image 1.png'
 import s from './index.module.css'
+import { ShoppingOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 
 export default function Nav() {
@@ -9,7 +10,7 @@ export default function Nav() {
 
         <div className={s.header_style} >
             <header >
-                <img src={logo} alt="logo" className={s.img_logo}/>
+                <Link to='/'><img src={logo} alt="logo" className={s.img_logo}/></Link>
                 <button>Catalog</button>
                 
             </header>
@@ -17,11 +18,12 @@ export default function Nav() {
 
         <div>
             <nav className={s.nav_menu}>
-                <Link to='/'>Categories</Link>
-                <Link to='/coupon'>Coupon</Link>
-                <Link to='/promotions'>Promotions</Link>
+                <Link to='categories'>Categories</Link>
+                <Link to='/'>Coupon</Link>
+                <Link to='/products'>Promotions</Link>
                 <Link to='/contacts'>Contacts</Link>
-                <Link to='/cart'>Cart</Link>   
+                <Link to='/cart' className={s.cart_style}><ShoppingOutlined /></Link>  
+
             </nav>
         </div>
     </div>

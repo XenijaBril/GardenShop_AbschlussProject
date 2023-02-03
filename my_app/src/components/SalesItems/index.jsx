@@ -1,7 +1,10 @@
 import React from 'react'
+import SalesProductContainer from '../SalesProductContainer'
 
 export default function SalesItems() {
   return (
-    <div>SalesItems</div>
+    <div>
+      <SalesProductContainer />
+    </div>
   )
 }

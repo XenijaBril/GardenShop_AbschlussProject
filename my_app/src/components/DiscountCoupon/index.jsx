@@ -13,10 +13,10 @@ export default function DiscountCoupon() {
           <p className={s.disc_coupon_about_sale}>for first ordner</p>
         </div>
 
-        <div className={s.info_number_block}>
-            <input type="text" placeholder='+7' />
-            <button>Get coupon</button>
-        </div>
+        <form className={s.info_form_block}>
+            <input type="number" placeholder='+49 999999999' />
+            <button>Get a discount</button>
+        </form>
       </div>
     </section>
     

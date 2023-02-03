@@ -3,6 +3,8 @@
     background-color: rgb(20, 126, 20);
     display: flex;
     justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
   
 }
 
@@ -19,12 +21,10 @@
 }
 
 .disc_coupon_text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: normal;
+   
     font-weight: 700;
     line-height: 120%;
     color: #FFFFFF; 
-    
     display: flex;
     flex-direction: column;
     padding: 25px 0 ;
@@ -42,7 +42,7 @@
 
 }
 
-.info_number_block {
+.info_form_block {
     display: flex;
     flex-direction: column; 
     gap: 20px;
@@ -54,18 +54,18 @@
     background-color: #FFFFFF;
     border: 2.39494px solid #FFFFFF;
     border-radius: 25.1468px;
+    font-size: 20px;
+    padding: 0 0 0 30px;
 }
 
 .disc_coupon button {
     background: rgb(20, 126, 20);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #FFFFFF;
     width: 473px;
     height: 75px;
     border: 2.39494px solid #FFFFFF;
     border-radius: 25.1468px;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 650;
     font-size: 28.7392px;
     cursor: pointer;
 
