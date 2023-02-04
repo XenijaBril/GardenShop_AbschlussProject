@@ -1,0 +1,10 @@
+.products_containr h2 {
+   
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    padding: 33px 10px;
+
+}

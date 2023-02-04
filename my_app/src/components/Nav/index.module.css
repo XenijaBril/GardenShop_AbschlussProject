@@ -3,10 +3,7 @@
     width: 1440px;
     display: flex;
     justify-content: space-between;
-    font-style: normal;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-
     position: relative;
 }
 
@@ -15,8 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;  
-    
+    gap: 30px;     
 }
 
 .header_style button {
@@ -26,8 +22,7 @@
     padding: 14px 30px 15px;
     gap: 5px;
     font-size: 17px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+       
     position: absolute;
     width: 129px;
     height: 49px;
