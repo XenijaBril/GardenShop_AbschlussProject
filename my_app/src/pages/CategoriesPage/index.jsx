@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect } from 'react';
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { load_categories } from '../../requests/categories_req';
 import CategoryCard from '../../components/CategoryCard';

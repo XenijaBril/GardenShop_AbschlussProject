@@ -4,7 +4,7 @@
     cursor: pointer;
     border: 1px solid transparent;
     width: 318px;
-    height: 600px;
+    height: 550px;
     position: relative;
 }
 
@@ -14,12 +14,33 @@
     object-fit: cover;
 }
 
-.product_card p {
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    margin: 10px;
+}
+
+.discount_price {
+    font-size: 30px;
+}
+
+.old_price {
+    color:rgba(139, 139, 139, 1);
+    text-decoration: line-through;
+    font-size: 20px; 
+}
+
+.procent_price {
+    color: red;
+    font-size: 20px;
+}
+
+.title_product {
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
-    display: flex;
-    justify-content: center;
     margin: 10px 0;
     
 }
@@ -37,9 +58,10 @@
     border: 2px solid #FFFFFF;
     border-radius: 20px;
     cursor: pointer;
+    
    
 }
 
 .product_cart_btn:hover {
-    background-color: rgb(120, 178, 34);
+    background-color: rgb(151, 218, 52);
 }

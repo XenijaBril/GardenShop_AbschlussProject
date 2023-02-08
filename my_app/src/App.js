@@ -5,7 +5,9 @@ import HomePage from './pages/HomePage';
 import CategoriesPage from './pages/CategoriesPage';
 import DiscountCoupon from './components/DiscountCoupon';
 import CartPage from './pages/CartPage/index';
-import ProductsPage from './pages/ProductsPage'
+import SaleProductsPage from './pages/SaleProductsPage'
+import ProductDescrPage from './pages/ProductDescrPage';
+import CategoryProductsPage from './pages/CategoryProductsPage';
 
 
 function App() {
@@ -17,8 +19,10 @@ function App() {
           <Route path='categories' element={<CategoriesPage /> }  /> 
           <Route path='/' element={<DiscountCoupon /> }  /> 
           <Route path='cart' element={<CartPage /> }  /> 
-          <Route path='products' element={<ProductsPage />}/>
-        </Route>
+          <Route path='products' element={<SaleProductsPage />} />
+          <Route path='products/:id' element={<ProductDescrPage />} />
+          <Route path='categories/:category' element={<CategoryProductsPage />} />
+          </Route>
       </Routes>
      
     </div>

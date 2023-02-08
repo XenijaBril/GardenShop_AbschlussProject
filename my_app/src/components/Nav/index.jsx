@@ -11,7 +11,7 @@ export default function Nav() {
         <div className={s.header_style} >
             <header >
                 <Link to='/'><img src={logo} alt="logo" className={s.img_logo}/></Link>
-                <button>Catalog</button>
+                <Link to='categories'><button>Catalog</button></Link>
                 
             </header>
         </div>
@@ -20,7 +20,7 @@ export default function Nav() {
             <nav className={s.nav_menu}>
                 <Link to='categories'>Categories</Link>
                 <Link to='/'>Coupon</Link>
-                <Link to='/products'>Promotions</Link>
+                <Link to='/products'>Sale</Link>
                 <Link to='/contacts'>Contacts</Link>
                 <Link to='/cart' className={s.cart_style}><ShoppingOutlined /></Link>  
 
