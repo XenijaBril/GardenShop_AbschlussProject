@@ -9,8 +9,8 @@ import { ProductsCategoryReducer } from './reducers/products_category';
 const rootReducer = combineReducers({
  categories: categoriesReducer,
  products: productsReducer,
- product_item: productItemReducer,
- products_category: ProductsCategoryReducer
+ products_category: ProductsCategoryReducer,
+ product_item: productItemReducer
 });
 
 export const store = createStore(rootReducer,applyMiddleware(thunk));

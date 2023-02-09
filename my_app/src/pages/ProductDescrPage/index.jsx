@@ -5,19 +5,22 @@ import { load_product } from '../../requests/productItem_req';
 
 
 export default function ProductDescrPage() {
-
+ 
+  const { product } = useParams();
+  
   const dispatch = useDispatch();
 
+  const product_item = useSelector(state => state.product_item);
+
   useEffect(() => {
-    dispatch(load_product(id))
-  }, []);
+    dispatch(load_product(product), 
+    [])});
+ 
+  const { title, description, price, discont_price, image } = product_item;
 
-  const { id } = useParams();
+  //const discount = Math.round(((price - discont_price) / price) * 100);
 
-  const product = useSelector(state => state.product_item);
-
-  const { title, description, price, discont_price,image } = product;
-
+  
   return (
     <div>
       <p>{title}</p>
@@ -30,12 +33,7 @@ export default function ProductDescrPage() {
           <p>-7%</p>
           <button>ADD TO CART</button>
         </div>
-      </div>
-      
-      
-
-  
-     
+      </div>    
     </div>
   )
 }
