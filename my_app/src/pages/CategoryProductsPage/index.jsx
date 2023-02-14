@@ -18,16 +18,13 @@ export default function CategoryProductsPage() {
 
     
   return (
-
     <div>
-        <p>Title</p>
-        <div className={s.category_products}>
+      <h2>{category}</h2>
+      <div className={s.category_products}>
         {
-            category_products.map(el => <ProductCard key={el.id} {...el} />)
+          category_products.map(el => <ProductCard key={el.id} {...el} />)
         }
-    </div>
-    </div>
-
-    
+      </div>
+    </div>    
   )
 }

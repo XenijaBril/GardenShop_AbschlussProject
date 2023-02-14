@@ -5,7 +5,7 @@ import s from './index.module.css'
 export default function SaleProductsPage() {
   return (
     <div className={s.products_containr}>
-      <h2>Sale</h2>
+      <p>Sale</p>
       <ProductsContainer />
     </div>
   )

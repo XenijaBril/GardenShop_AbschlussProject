@@ -10,15 +10,16 @@ export default function ProductCard({id, title, image, price, discont_price}) {
 
   return (
     <div className={s.product_card}>
-      <Link to={product_url}><img src={`http://localhost:3333${image}`} alt={title} /></Link>
-      <div className={s.price}>
-        <p className={s.discount_price}>{discont_price}€</p>
-        <p className={s.old_price}>{price}€</p>
-        <p className={s.procent_price}>{discount}%</p>
+      <div>
+         <Link to={product_url}><img src={`http://localhost:3333${image}`} alt={title} /></Link>
+         <button>Add to cart</button>
       </div>
-      <p className={s.title_product}>{title}</p>
-      <button className={s.product_cart_btn}>Add to cart</button>
-
+      <div className={s.price}>
+        <p>{discont_price}€</p>
+        <p>{price}€</p>
+        <p>{discount}%</p>
+      </div> 
+      <h3>{title}</h3>   
     </div>
   )
 }

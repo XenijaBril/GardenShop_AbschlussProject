@@ -1,6 +1,6 @@
 .footer_block {
     width: 1440px;
-    margin: 80px auto;
+    margin: 120px auto;
     padding: 33px;
 
     display: flex;
@@ -10,7 +10,7 @@
 .contacts_block {
     width: 800px;
     height: 300px;
-    margin: 10px 0 0 43px;
+    margin: auto 0;
 }
 .contacts_block h2 {
     font-weight: 700;

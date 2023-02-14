@@ -1,6 +1,6 @@
 import { loadProductsCategory } from "../store/reducers/products_category"
 
-export const load_products_category =  (category, title) => {
+export const load_products_category =  (category) => {
     return dispatch => {
         fetch(`http://localhost:3333/categories/${category}`)
     .then(resp => resp.json())
