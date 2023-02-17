@@ -1,0 +1,13 @@
+.cart {
+    width: 824px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+img {
+    width: 192.6px;
+    height: 166.64px;
+    object-fit: contain;
+}
