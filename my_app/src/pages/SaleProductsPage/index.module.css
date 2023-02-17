@@ -1,9 +1,8 @@
-.products_containr p {
+.title_sale {
     font-weight: 700;
-    font-size: 55px;
-    display: flex;
-    justify-content: start;
-    margin: 0 auto;
-    padding: 33x 10px;
-
+    font-size: 50px; 
+    margin: auto;
+    padding: 0 33px;
 }
+
+

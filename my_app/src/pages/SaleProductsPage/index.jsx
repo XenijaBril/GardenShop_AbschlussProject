@@ -4,8 +4,8 @@ import s from './index.module.css'
 
 export default function SaleProductsPage() {
   return (
-    <div className={s.products_containr}>
-      <p>Sale</p>
+    <div>
+      <p className={s.title_sale}>Sale</p>
       <ProductsContainer />
     </div>
   )
