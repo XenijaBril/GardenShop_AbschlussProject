@@ -6,13 +6,13 @@ const INCREMENT_COUNT = 'INCREMENT_COUNT';
 const DECREMENT_COUNT = 'DECREMENT_COUNT';
 
 export const AddToCart = payload => ({ type: ADD_TO_CARD, payload});
-export const clearCard = payload => ({ type: ADD_TO_CARD, payload});
+export const clearCard = () => ({ type: CLEAR_CARD });
+// export const clearCard = payload => ({ type: ADD_TO_CARD, payload});
 export const incrementCount = payload => ({ type: INCREMENT_COUNT, payload});
 export const decrementCount = payload => ({ type: DECREMENT_COUNT, payload});
 
 const checkProduct = (state, payload) => {
-
- const productInState = state.find(el => el.id === payload.id);
+const productInState = state.find(el => el.id === payload.id);
     if (productInState) {
         productInState.count++
         return [...state]

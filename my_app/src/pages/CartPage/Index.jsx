@@ -1,17 +1,12 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import CartCard from '../../components/CartCard';
-import { clearCard } from '../../store/reducers/cart';
 import s from './index.module.css'
 
+
 export default function CartPage() {
-
   const cart = useSelector(state => state.cart)
-  const dispatch = useDispatch();
-
-  const clear_cart = () => dispatch(clearCard());
-
-
+  const total = (cart.reduce((prev, {discont_price, count}) => prev + discont_price * count, 0).toFixed(2));
   //console.log(cart);
 
   return (
@@ -24,13 +19,17 @@ export default function CartPage() {
               cart.map(el => <CartCard key={el.id} {...el}/>)
             }
           </div>
-      }
-      
-      <div>
-        <p>Total: </p>
-        <input type='number' placeholder='Phone number' />
-        <button>Order</button>
-        <button onClick={clear_cart}>Clear card</button>
+      }      
+      <div className={s.order_details_form}>
+        <p className={s.title_form}>Order details</p>
+        <div className={s.total}>
+          <p>Total: </p>
+          <p>{total}<span>€</span></p>
+        </div>
+        <div className={s.inp_btn}>
+          <input type='number' placeholder='Phone number'/>
+          <button>Order</button> 
+        </div>     
       </div>
     </div>
   )

@@ -16,9 +16,7 @@ export default function ProductsContainer() {
     <div className={s.products_container}>
         {
           products.map(el => <ProductCard key={el.id} {...el} />)  
-        }
-        
-        
+        }      
     </div>
   )
 }
