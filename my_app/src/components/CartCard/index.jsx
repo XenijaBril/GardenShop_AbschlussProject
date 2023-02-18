@@ -13,18 +13,18 @@ export default function CartCard({id, title, image, price, discont_price, count}
   return (
     <div className={s.cart}>
         <img src={`http://localhost:3333${image}`} alt={title}/>
-        <div>
+        <div className={s.title_count}>
             <p>{title}</p> 
-            <div>
-                <button onClick={ increment_count }>+</button>
-                <p>{count}</p>
+            <div className={s.count}>
                 <button onClick={decrement_count}>-</button>
+                <p>{count}</p>
+                <button onClick={ increment_count }>+</button>              
             </div>
         </div>
-        <div>
+        <div className={s.price}>
             {/* <p>{ discont_price } x { count } = { discont_price * count }</p> */}
-            <p>{discont_price} $</p>
-            <p>{price} $</p>
+            <p>{discont_price}€</p>
+            <p>{price}€</p>
         </div>
     </div>
   )

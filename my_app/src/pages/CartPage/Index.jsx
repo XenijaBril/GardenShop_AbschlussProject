@@ -19,7 +19,7 @@ export default function CartPage() {
       {
         cart.length === 0 
         ? <p>The cart is empty...</p>
-        : <div>
+        : <div className={s.title_count}>
             {
               cart.map(el => <CartCard key={el.id} {...el}/>)
             }
