@@ -6,7 +6,7 @@
     width: 218px;
     height: 350px;
     position: relative;
-    margin: 80px 20px;
+    margin: 20px 20px 100px 20px;
 }
 
 .product_card div img {
@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 35px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .price :nth-child(1) {
@@ -40,11 +40,14 @@
 }
 
 .title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     margin: 10px 0; 
-    text-decoration: none;
     color: rgba(58, 58, 58, 1);    
+}
+
+a {
+    text-decoration: none;
 }
 
 .product_card button {

@@ -15,7 +15,9 @@ export default function ProductsContainer() {
     return (
     <div className={s.products_container}>
         {
-          products.map(el => <ProductCard key={el.id} {...el} />)  
+          products
+          .filter(el => !el.hide)
+          .map(el => <ProductCard key={el.id} {...el} />)  
         }      
     </div>
   )

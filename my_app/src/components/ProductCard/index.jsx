@@ -25,7 +25,7 @@ export default function ProductCard({id, title, image, price, discont_price}) {
         <p>{price}€</p>
         <p>{discount}%</p>
       </div> 
-      <Link to={product_url} className={s.title}><p>{title}</p></Link>   
+      <Link to={product_url}><p className={s.title}>{title}</p></Link>   
     </div>
   )
 }
