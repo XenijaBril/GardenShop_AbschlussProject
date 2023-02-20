@@ -21,16 +21,16 @@ export const productsReducer = (state = defaultState, action) => {
         } else {
         return [...state].sort((a,b) => a[action.payload] - b[action.payload])
         }
-    } else if (action.type === SEARCH_PRICE) {
-       const { min_value, max_value } = action.payload;
-       return state.map(el => {
-        if (el.price >= min_value && el.price <= max_value.value) {
+    } else if (action.type === SEARCH_PRICE){
+        const { min_value, max_value } = action.payload;
+        return state.map(el => {
+          if (el.price >= min_value && el.price <= max_value){
             el.hide = false
-        } else {
+          } else {
             el.hide = true
-        }
-        return el
-       }) 
+          }
+          return el
+        })
     } else {
        return state   
     }
