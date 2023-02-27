@@ -3,72 +3,68 @@
     margin: auto;
     width: 1440px;
     height: 600px;
-    position: relative;   
-    font-weight: 700;
-    line-height: 130%;
-    color: #FFFFFF;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: #FFFFFF;   
+    padding-left: 50px;
 }
 
-.title_sale {
-    position: absolute;
-    width: 540px;
-    height: 104px;
-    left: 50px;
-    top: 197px;
-    font-size: 80px;
-    
+.sale_block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
 }
 
-.about_sale {
-   position: absolute;
+.sale_block h2 {
    width: 540px;
    height: 104px;
-   left: 50px;
-   top: 297px; 
-   font-size: 60px;
+   font-size: 80px;
 
 }
 
-.sales_banner button {
+.sale_block p {
+    font-size: 63px;
+}
+
+.sale_btn {
     display: flex;
-    flex-direction: center;
-    align-items: center;
+    flex-direction: row;
     gap: 10px;
-    width: 244px;
+}
+
+.sale_btn button {
+    width: 174px;
     padding: 25px 50px;
     border-radius: 13px;
-    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    font-size: 25px;
     font-weight: 600;
     cursor: pointer;
-
 }
 
-.button_promotions {
-    position: absolute;
-    left: 50px;
-    top: 397px; 
-    color: black;
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
-
+.sale_btn :nth-child(1):hover button {
+    background-color: rgba(161, 226, 235, 1);
+    border: 2px solid #FFFFFF;
 }
 
-.button_more {
-    position: absolute;
-    left: 350px;
-    top: 397px; 
+.sale_btn :nth-child(2) {
+    width: 240px;
     background-color: rgba(161, 226, 235, 1);
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
+} 
 
+.sale_btn :nth-child(2):hover {
+    background-color: #FFFFFF;
+    color: rgba(161, 226, 235, 1);
+    border: 2px solid transparent;
 }
 
 .sales_banner img {
-    width: 750px;
-    height: 679px;
-    position: absolute;
-    bottom: 10px;
-    left: 689px;  
+    width: 720px;
+    height: 100%;
+    object-fit: cover;   
 }
 

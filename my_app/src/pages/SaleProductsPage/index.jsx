@@ -28,8 +28,8 @@ export default function SaleProductsPage() {
           <input type="number" placeholder='to' name='max'/>
           <button>Search</button>
         </form>
-        <div>
-          <span>Sort by:</span>
+        <div className={s.sort_value}>
+          <p>Sort by:</p>
           <select onInput={sort_products}>
             <option value="default">default</option>
             <option value="title">title</option>

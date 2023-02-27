@@ -3,6 +3,7 @@ import logo from './media/image 1.png'
 import s from './index.module.css'
 import { ShoppingOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
+import { HashLink } from "react-router-hash-link"
 
 export default function Nav() {
   return (
@@ -19,11 +20,12 @@ export default function Nav() {
         <div>
             <nav className={s.nav_menu}>
                 <Link to='categories'>Categories</Link>
-                <Link to='/'>Coupon</Link>
+                <HashLink smooth to="#coupon">Coupon</HashLink>
                 <Link to='/products'>Sale</Link>
-                <Link to='/contacts'>Contacts</Link>
+                <HashLink smooth to="#contacts">
+                    Contacts
+                </HashLink>
                 <Link to='/cart' className={s.cart_style}><ShoppingOutlined /></Link>  
-
             </nav>
         </div>
     </div>

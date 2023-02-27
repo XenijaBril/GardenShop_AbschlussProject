@@ -5,7 +5,7 @@ import imgCoupon from './media/image 3.png'
 
 export default function DiscountCoupon() {
   return (
-    <section className={s.disc_coupon}>
+    <section className={s.disc_coupon} id="coupon">
       <img src={imgCoupon} alt="imgCoupon" />
       <div className={s.disc_coupon_info}>
         <div className={s.disc_coupon_text}>
@@ -14,7 +14,7 @@ export default function DiscountCoupon() {
         </div>
 
         <form className={s.info_form_block}>
-            <input type="number" placeholder='+49 999999999' />
+            <input type="nummber" placeholder='+49 999999999' />
             <button>Get a discount</button>
         </form>
       </div>

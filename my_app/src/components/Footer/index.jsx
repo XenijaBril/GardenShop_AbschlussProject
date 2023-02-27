@@ -5,7 +5,7 @@ import {FaWhatsapp} from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className={s.footer_block}>
+    <section className={s.footer_block} id="contacts">
       <div className={s.contacts_block}>
         <h2>Contact</h2>
         <p>+49 99999999999</p>
@@ -21,6 +21,6 @@ export default function Footer() {
         <p>24 hours a day</p>
       </div>
        
-    </footer>
+    </section>
   )
 }

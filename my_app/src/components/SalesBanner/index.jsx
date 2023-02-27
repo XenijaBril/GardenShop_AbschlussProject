@@ -1,15 +1,20 @@
 import React from 'react'
-import saleImg from './mediaa/image 2.png'
+import saleImg from './media/image 22.png'
 import s from './index.module.css'
+import { Link } from 'react-router-dom'
 
 export default function SalesBanner() {
   return (
     <section>
       <div className={s.sales_banner}>
-        <h2 className={s.title_sale}>Sale-Finale:</h2>
-        <h3 className={s.about_sale}>Up to 70% discont</h3>
-        <button className={s.button_promotions}>All promotions</button>
-        <button className={s.button_more}>More...</button>
+        <div className={s.sale_block}> 
+          <h2>Sale-Finale:</h2>
+          <p>Up to 70% discont</p>
+          <div className={s.sale_btn}>
+            <Link to='/products'><button>Sale</button></Link>
+            <button>Lear more</button>
+          </div>
+        </div>
         <img src={saleImg} alt="saleImg" />
       </div>
 
