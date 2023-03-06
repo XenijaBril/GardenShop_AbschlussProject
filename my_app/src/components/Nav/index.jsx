@@ -20,7 +20,7 @@ export default function Nav() {
         <div>
             <nav className={s.nav_menu}>
                 <Link to='categories'>Categories</Link>
-                <HashLink smooth to="#coupon">Coupon</HashLink>
+                <HashLink smooth to="/#coupon">Coupon</HashLink>
                 <Link to='/products'>Sale</Link>
                 <HashLink smooth to="#contacts">
                     Contacts

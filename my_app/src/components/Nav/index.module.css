@@ -36,6 +36,10 @@
     cursor: pointer;
 }
 
+.header_style:hover button {
+    color: black;
+}
+
 .img_logo {
     position: absolute;
     width: 72px;

@@ -8,9 +8,25 @@ import CartPage from './pages/CartPage/index';
 import SaleProductsPage from './pages/SaleProductsPage'
 import ProductDescrPage from './pages/ProductDescrPage';
 import CategoryProductsPage from './pages/CategoryProductsPage';
+import { localStoreCard } from './store/reducers/cart';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 function App() {
+
+ const dispatch = useDispatch();
+ const cart = useSelector(state => state.cart)
+  useEffect(() => {
+    const cartLocal = JSON.parse((localStorage.getItem("cart")))
+    if (cartLocal && cartLocal.length)
+    dispatch(localStoreCard(cartLocal))
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart))
+  }, [cart]);
+
   return (
     <div>
       <Routes>
